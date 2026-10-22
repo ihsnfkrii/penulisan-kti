@@ -25,7 +25,7 @@ def get(path, **q):
     if KEY:
         q["api_key"] = KEY
     url = f"{API}{path}?{urllib.parse.urlencode(q)}"
-    req = urllib.request.Request(url, headers={"User-Agent": "naskah-id/0.1 (+https://github.com/nothinx/naskah-id)"})
+    req = urllib.request.Request(url, headers={"User-Agent": "penulisan-kti/0.1 (+https://github.com/ihsnfkrii/penulisan-kti)"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.load(r)

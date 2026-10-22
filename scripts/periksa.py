@@ -155,8 +155,8 @@ def validasi():
     if not fm:
         return ["SKILL.md: frontmatter tidak ada"]
     meta = dict(re.findall(r"^(\w+):\s*\"?(.*?)\"?\s*$", fm.group(1), re.M))
-    if meta.get("name") != "naskah-id":
-        galat.append("SKILL.md: name harus naskah-id")
+    if meta.get("name") != "penulisan-kti":
+        galat.append("SKILL.md: name harus penulisan-kti")
     if not 50 <= len(meta.get("description", "")) <= 1024:
         galat.append("SKILL.md: description harus 50-1024 karakter")
     if skill.count("\n") > 250:
