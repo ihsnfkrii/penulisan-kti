@@ -1,10 +1,10 @@
 ---
-name: naskah-id
+name: penulisan-kti
 description: "Menulis dan menyunting karya ilmiah berbahasa Indonesia yang natural, baku (EYD V, KBBI), dan jujur: artikel jurnal SINTA, prosiding, skripsi, tesis, disertasi, proposal hibah, makalah, laporan penelitian, tinjauan pustaka, abstrak. Pakai saat diminta menulis latar belakang, merapikan bahasa bab, mengoreksi ejaan, menyunting kalimat kaku atau terasa terjemahan, atau membuang pola tulisan AI dalam naskah Indonesia (Indonesian academic writing, proofreading, EYD). Tidak mengubah angka, hasil, atau sitasi; tidak mengarang rujukan; bukan alat lolos detektor AI. Naskah berbahasa Inggris bukan bagiannya."
 license: MIT
 ---
 
-# naskah-id
+# penulisan-kti
 
 Skill ini membantu menulis dan menyunting naskah ilmiah berbahasa Indonesia. Sasarannya prosa
 yang dibaca seperti tulisan peneliti Indonesia yang cermat: baku tanpa kaku, ringkas, dan

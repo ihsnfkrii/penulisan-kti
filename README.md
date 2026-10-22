@@ -1,4 +1,4 @@
-# naskah-id
+# penulisan-kti
 
 Skill agen AI untuk menulis dan menyunting karya ilmiah berbahasa Indonesia: artikel jurnal,
 skripsi, tesis, proposal hibah, dan laporan penelitian. Ejaan dan kata mengikuti EYD V dan
@@ -88,8 +88,8 @@ Gemini CLI, GitHub Copilot, Windsurf, OpenCode, Cline, Kiro, Antigravity, dan pu
 lain yang mendukung format Agent Skills.
 
 ```bash
-npx skills add nothinx/naskah-id        # untuk proyek di folder ini saja
-npx skills add nothinx/naskah-id -g     # untuk semua proyek
+npx skills add ihsnfkrii/penulisan-kti        # untuk proyek di folder ini saja
+npx skills add ihsnfkrii/penulisan-kti -g     # untuk semua proyek
 ```
 
 Tanpa opsi tambahan, perintah ini menanyakan agen mana yang dipasangi. Untuk langsung memilih
@@ -97,40 +97,40 @@ agen, tambahkan `-a` diikuti nama agen, dipisah spasi:
 
 | Agen | Nama untuk `-a` | Lokasi skill di proyek |
 | --- | --- | --- |
-| Claude Code | `claude-code` | `.claude/skills/naskah-id` |
-| Codex | `codex` | `.agents/skills/naskah-id` |
-| Cursor | `cursor` | `.agents/skills/naskah-id` |
-| Gemini CLI | `gemini-cli` | `.agents/skills/naskah-id` |
-| GitHub Copilot | `github-copilot` | `.agents/skills/naskah-id` |
-| OpenCode | `opencode` | `.agents/skills/naskah-id` |
-| Cline | `cline` | `.agents/skills/naskah-id` |
-| Antigravity | `antigravity` | `.agents/skills/naskah-id` |
-| Windsurf | `windsurf` | `.windsurf/skills/naskah-id` |
-| Kiro | `kiro-cli` | `.kiro/skills/naskah-id` |
+| Claude Code | `claude-code` | `.claude/skills/penulisan-kti` |
+| Codex | `codex` | `.agents/skills/penulisan-kti` |
+| Cursor | `cursor` | `.agents/skills/penulisan-kti` |
+| Gemini CLI | `gemini-cli` | `.agents/skills/penulisan-kti` |
+| GitHub Copilot | `github-copilot` | `.agents/skills/penulisan-kti` |
+| OpenCode | `opencode` | `.agents/skills/penulisan-kti` |
+| Cline | `cline` | `.agents/skills/penulisan-kti` |
+| Antigravity | `antigravity` | `.agents/skills/penulisan-kti` |
+| Windsurf | `windsurf` | `.windsurf/skills/penulisan-kti` |
+| Kiro | `kiro-cli` | `.kiro/skills/penulisan-kti` |
 
 ```bash
-npx skills add nothinx/naskah-id -a claude-code codex cursor gemini-cli github-copilot -y
+npx skills add ihsnfkrii/penulisan-kti -a claude-code codex cursor gemini-cli github-copilot -y
 ```
 
 Lokasi di tabel adalah hasil pemasangan tingkat proyek yang diuji pada 22 Oktober 2026. Daftar
 lengkap nama agen muncul bila `-a` diberi nama yang tidak dikenal. Untuk memperbarui:
-`npx skills update naskah-id`.
+`npx skills update penulisan-kti`.
 
 ### Claude Code sebagai plugin
 
 Ketik di dalam sesi Claude Code:
 
 ```
-/plugin marketplace add nothinx/naskah-id
-/plugin install naskah-id@naskah-id
+/plugin marketplace add ihsnfkrii/penulisan-kti
+/plugin install penulisan-kti@penulisan-kti
 ```
 
-Untuk memperbarui: `/plugin marketplace update naskah-id`.
+Untuk memperbarui: `/plugin marketplace update penulisan-kti`.
 
 ### Salin manual (Codex dan agen lain)
 
 ```bash
-git clone https://github.com/nothinx/naskah-id.git ~/.codex/skills/naskah-id
+git clone https://github.com/ihsnfkrii/penulisan-kti.git ~/.codex/skills/penulisan-kti
 ```
 
 Ganti `~/.codex/skills` dengan folder skill agen Anda, misalnya `~/.claude/skills` untuk
@@ -141,8 +141,8 @@ memperbarui, jalankan `git pull` di folder itu.
 
 ### Claude.ai
 
-1. Buat ZIP berisi folder `naskah-id` yang di dalamnya langsung ada `SKILL.md`. ZIP unduhan
-   GitHub berisi folder `naskah-id-main`; ubah dulu nama foldernya menjadi `naskah-id`, lalu
+1. Buat ZIP berisi folder `penulisan-kti` yang di dalamnya langsung ada `SKILL.md`. ZIP unduhan
+   GitHub berisi folder `penulisan-kti-main`; ubah dulu nama foldernya menjadi `penulisan-kti`, lalu
    kompres ulang.
 2. Di Claude.ai, buka pengaturan, bagian skill, lalu unggah ZIP itu sebagai skill kustom.
    Bila diminta, aktifkan dulu fitur eksekusi kode.
@@ -153,7 +153,7 @@ Aplikasi chat Gemini, baik versi web maupun desktop, tidak membaca folder skill 
 lewat `npx skills`. Folder itu hanya dibaca Gemini CLI. Untuk memakai skill ini di aplikasi chat,
 buat Gem:
 
-1. Di aplikasi Gemini, buka **Gems**, lalu buat Gem baru, misalnya dengan nama `naskah-id`.
+1. Di aplikasi Gemini, buka **Gems**, lalu buat Gem baru, misalnya dengan nama `penulisan-kti`.
 2. Salin seluruh isi `SKILL.md` ke kolom instruksi.
 3. Unggah berkas di folder `references/` sebagai pengetahuan Gem.
 
@@ -306,9 +306,9 @@ itu dirilis dengan CC BY-SA 4.0.
 
 ## English summary
 
-`naskah-id` is an agent skill for writing and editing Indonesian academic texts (journal
+`penulisan-kti` is an agent skill for writing and editing Indonesian academic texts (journal
 articles, theses, grant proposals) in natural, standard Indonesian (EYD V, KBBI). It never
 changes numbers, results, or citations, never invents references, and is not a tool for
-evading AI detectors. Install with `npx skills add nothinx/naskah-id` for Claude Code, Codex,
+evading AI detectors. Install with `npx skills add ihsnfkrii/penulisan-kti` for Claude Code, Codex,
 Cursor, Gemini CLI, GitHub Copilot, Windsurf, OpenCode, and other Agent Skills hosts. It ships
 an OpenAlex CLI for reference checks and MCP setup for Consensus and alphaXiv. MIT licensed.
