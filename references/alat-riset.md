@@ -21,7 +21,7 @@ python scripts/openalex.py bib 10.33007/ska.v14i2.3525
 python scripts/openalex.py dikutip 10.33007/ska.v14i2.3525
 ```
 
-Jalankan dari folder skill (misalnya `.agents/skills/naskah-id` atau `.claude/skills/naskah-id`).
+Jalankan dari folder skill (misalnya `.agents/skills/penulisan-kti` atau `.claude/skills/penulisan-kti`).
 Hanya butuh Python 3.7 atau lebih baru. Tanpa kunci API, kuota
 harian OpenAlex kecil; bila muncul galat kuota, buat kunci gratis di
 https://openalex.org/settings/api lalu simpan sebagai variabel lingkungan `OPENALEX_API_KEY`:
