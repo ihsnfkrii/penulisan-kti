@@ -1,5 +1,5 @@
 {
-  "skill": "naskah-id",
+  "skill": "penulisan-kti",
   "catatan": "Setiap kasus berisi prompt pengguna dan kriteria lulus yang dinilai manusia atau model penilai. Semua nama, angka, dan rujukan di prompt fiktif.",
   "cases": [
     {
